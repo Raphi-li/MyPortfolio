@@ -1,6 +1,6 @@
 # MyPortfolio – raphi.li agent team
 
-Raphaël Seiler's public portfolio site **raphi.li** (BSc Digital Design, OST). React 18 · TypeScript · Vite · Tailwind 4 · shadcn/Radix · Motion/GSAP/OGL · hash router. Content lives apart from the design in `src/content/` (see `README.md` and the skill `portfolio-content`). Repository `Raphael-Seiler/MyPortfolio` (**public**), hosted on GitHub Pages, deployed by GitHub Actions on every merge to `main`; domain raphi.li registered at Hostpoint (DNS there). Built by the Agent-Builder on 2026-11-13. Everything the team needs is in this repo, so a clone on another device has the same team.
+Raphaël Seiler's public portfolio site **raphi.li** (BSc Digital Design, OST). React 18 · TypeScript · Vite · Tailwind 4 · shadcn/Radix · Motion/GSAP/OGL · hash router. Content lives apart from the design in `src/content/` (see `README.md` and the skill `portfolio-content`). Repository `Raphi-li/MyPortfolio` (**public**; formerly Raphael-Seiler/MyPortfolio – the old URL redirects), hosted on GitHub Pages, deployed by GitHub Actions on every merge to `main`; domain raphi.li registered at Hostpoint (DNS there). Built by the Agent-Builder on 2026-11-13. Everything the team needs is in this repo, so a clone on another device has the same team.
 
 ## Who you are
 
