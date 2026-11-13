@@ -15,3 +15,7 @@ dist/
 
 # IDE
 .idea/
+
+# agent scratch space (briefs, extracts, screenshots, reports per task)
+.work/
+.playwright-mcp/

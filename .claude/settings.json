@@ -1,0 +1,15 @@
+{
+  "model": "fable",
+  "fallbackModel": ["opus"],
+  "enabledPlugins": {
+    "figma@claude-plugins-official": true
+  },
+  "permissions": {
+    "deny": [
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(npm run deploy*)",
+      "Read(./**/.env*)"
+    ]
+  }
+}
