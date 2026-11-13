@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "miro": {
+      "type": "http",
+      "url": "https://mcp.miro.com/"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@0.0.84", "--output-dir", ".work/playwright"]
+    }
+  }
+}

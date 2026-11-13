@@ -69,14 +69,20 @@ Awards appear automatically on the Home page, the Experience timeline and in the
 
 ## Deployment
 
-The site is hosted on **GitHub Pages** at the custom domain raphi.li (`public/CNAME`, DNS at Hostpoint).
+The site is hosted on **GitHub Pages** at the custom domain raphi.li (`public/CNAME`, DNS at Hostpoint). Every merge to `main` is deployed by GitHub Actions (`.github/workflows/deploy.yml`: typecheck → build → Pages); pull requests run the same checks without deploying (`ci.yml`). `npm run deploy` (gh-pages branch) is no longer used.
 
-```bash
-npm run typecheck
-npm run deploy     # builds and publishes dist/ to the gh-pages branch
-```
+Earlier design versions (Apple, Google, own look) are kept as git tags `archive/<branch-name>`; `main` is the base branch for pull requests.
 
-Design versions live on separate branches, e.g. `apple-development` (Apple look) and `google-development` (Google look); `main` is the base branch for pull requests.
+## Working with the agents
+
+The repo carries its own Claude Code agent team (`.claude/`), so it works the same on every device. Open the project in Orca (or run `claude` in the repo) and talk to **Portfolio-Lead**:
+
+- `/projekt-aufnehmen <name> <sources>` – add a project from OneDrive files, Figma/FigJam, Miro, GitHub repos or websites.
+- `/aufgabe <change>` – any other change: design, feature, fix, text, CV.
+
+Each task runs in its own Orca worktree with a Task-Lead and the specialists `projekt-kurator`, `content-autor`, `media`, `design`, `frontend`, `a11y`, `qa` and `release`; it ends as a pull request with checks, and goes live when Raphi says "merge". Models: Fable where the provider has it, otherwise Opus (`.claude/settings.json`); `media`/`qa` on Sonnet, `release` on Haiku. Details: `.claude/CLAUDE.md`.
+
+First time on a device: accept the trust dialog, approve the project MCP servers (Miro, Playwright), run `/mcp` and sign in to Miro, make sure the Figma plugin is connected, and install `ffmpeg` (`brew install ffmpeg`) for video stills.
 
 ## Licenses
 
